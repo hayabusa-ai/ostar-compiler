@@ -13,6 +13,14 @@ Ostar-compiler includes various optimizations tailored for RISC-V-based microcon
 # Arch 
 <img width="287" alt="ostar" src="https://github.com/hayabusa-ai/ostar-compiler/assets/8334944/2ab335e1-dc58-41c2-b612-a7157900bfab">
 
+# How to contribute
+We welcome community contributions to Ostar. If you have an idea how to improve it:
+* Share your proposal via [GitHub issues].
+* Ensure you can build the product and run all the examples with your patch.
+* In the case of a larger feature, create a test.
+* Submit a [pull request].
+* Make sure your PR passes all CI tests. Note: You can test locally with `make check`.
+
 # License
 
 Open-source software under the AGPL V3 license.
