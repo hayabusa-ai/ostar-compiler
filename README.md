@@ -10,6 +10,9 @@ Ostar-compiler places special emphasis on adapting to the RISC-V instruction set
 # Performance Optimization
 Ostar-compiler includes various optimizations tailored for RISC-V-based microcontrollers. These optimizations fully exploit the strengths of the RISC-V architecture, including optimized instruction sets, memory management, data access, and computational efficiency. This ensures that AI models can run efficiently in resource-constrained embedded environments, making them suitable for a wide range of applications, such as IoT, robotics, and autonomous vehicles.
 
+# Arch 
+<img width="287" alt="ostar" src="https://github.com/hayabusa-ai/ostar-compiler/assets/8334944/2ab335e1-dc58-41c2-b612-a7157900bfab">
+
 # License
 
 Open-source software under the AGPL V3 license.
