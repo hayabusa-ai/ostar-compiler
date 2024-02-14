@@ -1,4 +1,4 @@
-# Ostar-Compiler: A Secure and Efficient AI Compiler for RISC-V Architecture
+# Ostar-Compiler: A Secure and Efficient AI Compiler for RISC-V
 # Introduction
 Ostar-compiler is a novel AI compiler that prioritizes the security and trustworthiness of AI models while also optimizing their performance on RISC-V architecture CPUs. With the growing demand for AI applications in embedded systems, ostar-compiler aims to provide developers with a powerful and efficient compilation toolchain that can compile AI models securely and reliably, minimizing potential vulnerabilities to hacking attacks.
 # Security Focus
