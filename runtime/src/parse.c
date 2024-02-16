@@ -214,7 +214,7 @@ static OstarNNStatus alignment_or_alloc_weights(
     uintptr_t current_addr = (uintptr_t)buffer;
     Device* host_dev = &model->host_dev;
     unsigned int alignment = host_dev->alignment;
-    //! sort all the weights by their ptr
+
     Tensor** sorted_weights = ostarnn_malloc(sizeof(Tensor*) * nr_weight);
     for (int i = 0; i < nr_weight; i++) {
         sorted_weights[i] = model->weights + i;
@@ -285,7 +285,7 @@ static OstarNNStatus alignment_or_alloc_weights(
 OstarNNStatus parse_device_model(
         DeviceModel* model, CombineModel* c_model,
         ns(DeviceModel_table_t) fbs_device_model) {
-    //! parse tensor
+
     ns(Tensor_vec_t) fbs_tensors = ns(DeviceModel_tensor_pool(fbs_device_model));
     int nr_tensor = ns(Tensor_vec_len(fbs_tensors));
     LOG_DEBUG("device model tensor number: %d\n", nr_tensor);
@@ -414,7 +414,7 @@ static inline bool valid_device_check(OstarNNDevice device) {
         model->model_len = 0;
     }
 
-    model->name = get_string(MegCC_Model_name(fbs_model));
+    model->name = get_string(Ostar_Model_name(fbs_model));
     model->model_id = ns(Model_model_id(fbs_model));
     model->const_shape = ns(Model_const_shape(fbs_model));
     LOG_DEBUG(
